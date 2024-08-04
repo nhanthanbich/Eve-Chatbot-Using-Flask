@@ -1,0 +1,279 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #B3D9FF, #E6F2FF); /* Gradient từ màu xanh dương nhạt đến gần trắng */
+}
+
+#chat {
+    margin-top: auto;
+    margin-bottom: auto;
+	width: 100%;
+}
+
+.card {
+    height: 640px;
+    border-radius: 15px !important;
+    background-color: white !important; /* Đổi màu nền của card thành trắng */
+}
+
+.contacts_body {
+    padding: 0.75rem 0 !important;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.msg_card_body {
+    overflow-y: auto;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+    background-color: #f8f9fa; /* Sáng hơn */
+}
+
+.card-footer {
+    border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+    background-color: #f8f9fa; /* Sáng hơn */
+}
+
+.container {
+    align-content: center;
+}
+
+.search {
+    border-radius: 15px 0 0 15px !important;
+    background-color: #e9ecef !important; /* Sáng hơn */
+    border: 0 !important;
+    color: #495057 !important; /* Sáng hơn */
+}
+
+.search:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.type_msg {
+    background-color: #e9ecef !important; /* Sáng hơn */
+    border: 0 !important;
+    color: #495057 !important; /* Sáng hơn */
+    height: 60px !important;
+    overflow-y: auto;
+}
+
+.type_msg:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.attach_btn, .send_btn, .search_btn {
+    border-radius: 15px !important;
+    background-color: #007bff !important; /* Màu xanh sáng */
+    border: 0 !important;
+    color: #ffffff !important; /* Màu trắng */
+    cursor: pointer;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts li {
+    width: 100% !important;
+    padding: 5px 10px;
+    margin-bottom: 15px !important;
+}
+
+.active {
+    background-color: rgba(0, 123, 255, 0.1); /* Sáng hơn */
+}
+
+.user_img {
+    height: 70px;
+    width: 70px;
+    border: 1.5px solid #007bff; /* Màu xanh sáng */
+}
+
+.user_img_msg {
+    height: 40px;
+    width: 40px;
+    border: 1.5px solid #007bff; /* Màu xanh sáng */
+}
+
+.img_cont {
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.img_cont_msg {
+    height: 40px;
+    width: 40px;
+}
+
+.online_icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #28a745; /* Màu xanh lá sáng */
+    border-radius: 50%;
+    bottom: 0.2em;
+    right: 0.4em;
+    border: 1.5px solid white;
+}
+
+.offline {
+    background-color: #dc3545 !important; /* Màu đỏ sáng */
+}
+
+.user_info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+.user_info span {
+    font-size: 20px;
+    color: #007bff; /* Màu xanh sáng */
+}
+
+.user_info p {
+    font-size: 10px;
+    color: #6c757d; /* Màu xám sáng */
+}
+
+.video_cam {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.video_cam span {
+    color: #007bff; /* Màu xanh sáng */
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.msg_cotainer {
+    max-width: 620px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #E9E9EB; /* Màu xám sáng cho tin nhắn từ bot */
+    padding: 10px;
+    position: relative;
+}
+
+.msg_cotainer_send {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #007bff; /* Màu xanh dương sáng cho tin nhắn từ người dùng */
+    padding: 10px;
+    position: relative;
+}
+
+.msg_time {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    color: rgba(0, 0, 0, 0.5); /* Màu xám sáng */
+    font-size: 10px;
+}
+
+.msg_time_send {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    color: rgba(255, 255, 255, 0.5); /* Màu trắng sáng cho thời gian tin nhắn gửi */
+    font-size: 10px;
+}
+
+.msg_head {
+    position: relative;
+}
+
+#action_menu_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #007bff; /* Màu xanh sáng */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.action_menu {
+    z-index: 1;
+    position: absolute;
+    padding: 15px 0;
+    background-color: rgba(0, 123, 255, 0.7); /* Màu xanh sáng */
+    color: #ffffff; /* Màu trắng */
+    border-radius: 15px;
+    top: 30px;
+    right: 15px;
+    display: none;
+}
+
+.action_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action_menu ul li {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+    padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 123, 255, 0.1); /* Màu xanh sáng hơn */
+}
+
+@media (max-width: 576px) {
+    .contacts_card {
+        margin-bottom: 15px !important;
+    }
+}
+
+.info_panel {
+    padding: 20px;
+}
+
+.info_panel .card {
+    height: 100%;
+    border-radius: 15px !important;
+    background-color: white !important; /* Đổi màu nền của card thành trắng */
+}
+
+.info_panel .card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+    background-color: #f8f9fa; /* Sáng hơn */
+}
+
+.info_panel .card-body {
+    overflow-y: auto;
+}
+
+#moreInfoBtn {
+    border-radius: 15px;
+}
+
+#intentsContainer {
+    max-height: 600px; 
+    overflow-y: auto;
+}
+
+#backBtn {
+    border-radius: 15px;
+}
