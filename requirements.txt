@@ -5,5 +5,3 @@ keras==2.15.0
 tensorflow==2.15.0
 numpy==1.25.0 
 
-#Chạy lệnh sau trên terminal để cài đặt:
-pip install -r requirements.txt
